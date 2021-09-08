@@ -25,13 +25,14 @@ function setup() {
   COLOR_CASILLERO_SIN_MINA = color("#1CC932");
   COLOR_CASILLERO_MARCADO = color("#278EF2");
 
-  // Modificar/completar
+  ponerMinaCasillero (4,7);
 }
 
 function draw() {
   if (hizoClick == true) {
     if (mouseButton == LEFT) {
       if (tieneMinaCasillero(columnaPresionada, filaPresionada)) {
+        
         perder();
       }
     }
